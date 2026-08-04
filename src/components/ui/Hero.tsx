@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="min-h-[80vh] flex items-center justify-center">
@@ -7,24 +9,20 @@ export default function Hero() {
           AI Powered Productivity
         </span>
 
-        <h1 className="mt-4 text-6xl font-bold">
-          Turn Meetings Into Action.
-        </h1>
+        <h1 className="mt-4 text-6xl font-bold">Turn Meetings Into Action.</h1>
 
         <p className="mt-6 text-xl text-gray-600">
-          Automatically generate summaries,
-          action items and insights from every meeting.
+          Automatically generate summaries, action items and insights from every
+          meeting.
         </p>
 
         <div className="mt-10 flex justify-center gap-4">
 
-          <button className="rounded-lg bg-black px-6 py-3 text-white">
+          <Link href="/dashboard" className="rounded-lg bg-black px-6 py-3 text-white">
             Get Started
-          </button>
+          </Link>
 
-          <button className="rounded-lg border px-6 py-3">
-            Live Demo
-          </button>
+          <button className="rounded-lg border px-6 py-3">Live Demo</button>
 
         </div>
 

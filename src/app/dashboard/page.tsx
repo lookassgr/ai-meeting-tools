@@ -1,10 +1,11 @@
 import DashboardHeader from "@/components/sections/DashboardHeader";
 import StatCard from "@/components/ui/StatCard";
 import Counter from "@/components/ui/counter";
+import MeetingsTable from "@/components/sections/MeetingsTable";
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+    <main className="min-h-screen bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
       <div className="mx-auto max-w-7xl p-8">
         <DashboardHeader />
 
@@ -25,6 +26,13 @@ export default function DashboardPage() {
           />
           <Counter/>
         </div>
+
+        <section className="mt-8">
+          <h2 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">Recent Meetings</h2>
+          <div className="rounded-2xl border border-gray-100 bg-white/90 p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800/60">
+            <MeetingsTable />
+          </div>
+        </section>
       </div>
     </main>
   );
