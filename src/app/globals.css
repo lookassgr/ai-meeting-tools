@@ -31,3 +31,23 @@ body {
 :root {
   --container-padding: 2rem;
 }
+
+/* Sidebar offset variable. Defaults to 0 when no sidebar is shown.
+   When the `sidebar-open` class is applied to the root element, media
+   queries set the appropriate offset matching the sidebar widths. */
+:root {
+  --sidebar-offset: 0px;
+}
+
+/* When sidebar is open, set offset for responsive breakpoints */
+@media (min-width: 768px) {
+  .sidebar-open {
+    --sidebar-offset: 16rem; /* md: ml-64 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar-open {
+    --sidebar-offset: 18rem; /* lg: ml-72 */
+  }
+}
