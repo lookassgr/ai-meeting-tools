@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="flex flex-1">
           <Sidebar />
 
-          <main className="flex-1 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 p-6 mt-16 md:mt-0 md:ml-64 lg:ml-72">
+          <main className="flex-1 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 p-6 mt-16 md:mt-0 md:ml-64 lg:ml-72">
             <div className="mx-auto w-full max-w-7xl">{children}</div>
           </main>
         </div>

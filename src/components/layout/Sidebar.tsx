@@ -4,7 +4,7 @@ export default function Sidebar() {
   return (
     <aside className="hidden md:flex md:fixed md:top-16 md:left-0 md:h-[calc(100vh-4rem)] md:w-64 lg:md:w-72 flex-col gap-6 bg-white/90 dark:bg-slate-900/60 border-r border-gray-100 dark:border-slate-700 p-6 overflow-auto">
       <div className="flex items-center gap-3">
-        <div className="h-10 w-10 flex-shrink-0 rounded-md bg-indigo-600 flex items-center justify-center text-white font-semibold">AI</div>
+        <div className="h-10 w-10 shrink-0 rounded-md bg-indigo-600 flex items-center justify-center text-white font-semibold">AI</div>
 
         <div>
           <div className="text-lg font-semibold text-slate-900 dark:text-white">AI Meeting Notes</div>

@@ -1,3 +1,4 @@
+import AuthGuard from "@/components/auth/AuthGuard";
 import DashboardHeader from "@/components/sections/DashboardHeader";
 import StatCard from "@/components/ui/StatCard";
 import Counter from "@/components/ui/counter";
@@ -5,9 +6,10 @@ import MeetingsTable from "@/components/sections/MeetingsTable";
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-      <div className="mx-auto max-w-7xl p-8">
-        <DashboardHeader />
+    <AuthGuard>
+      <main className="min-h-screen bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+        <div className="mx-auto max-w-7xl p-8">
+          <DashboardHeader />
 
         <div className="grid gap-6 md:grid-cols-3">
           <StatCard
@@ -33,7 +35,8 @@ export default function DashboardPage() {
             <MeetingsTable />
           </div>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+    </AuthGuard>
   );
 }
