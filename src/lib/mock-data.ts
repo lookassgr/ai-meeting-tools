@@ -1,6 +1,6 @@
-import { Meetings } from "@/types/meetings";
+import { Meeting } from "@/types/meeting";
 
-export const meetings: Meetings[] = [
+export const meetings: Meeting[] = [
   {
     id: "1",
     title: "Weekly Engineering Sync",
